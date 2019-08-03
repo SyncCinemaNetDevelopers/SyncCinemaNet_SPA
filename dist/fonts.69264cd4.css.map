@@ -1,0 +1,1 @@
+{"version":3,"sources":["stylus/fonts.styl"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA","file":"fonts.69264cd4.css","sourceRoot":"..","sourcesContent":["@font-face {\n  font-family: Quicksand; /* Имя шрифта */\n  src: url(\"77e3c748e965fcb22c90191445f07396.ttf\"); /* Путь к файлу со шрифтом */\n  font-style: normal;\n  font-weight: normal;\n}\n"]}

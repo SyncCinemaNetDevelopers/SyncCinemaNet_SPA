@@ -1,0 +1,21 @@
+.main-nav[data-v-ccbc53] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #eb637b;
+  height: 40px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#app {
+  font-family: Quicksand;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eb637b;
+  background: linear-gradient(45deg, #b642e3, #fb9287);
+}
+

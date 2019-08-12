@@ -3,11 +3,11 @@
     header
         nav.main-nav
             .wrapper
-                img(src="../images/logo.png" class="logo")
+                img(src="./../images/logo.png" class="logo")
                 .nav-group.nav_center-items
-                    img(src="../images/nav_fire.png" class="item")
-                    img(src="../images/nav_lock.png" class="item")
-                    img(src="../images/nav_camera.png" class="item")
+                    img(src="./../images/nav_fire.png" class="item")
+                    img(src="./../images/nav_lock.png" class="item")
+                    img(src="./../images/nav_camera.png" class="item")
                 .nav-group.account
                     router-link(to="login").link.login
                         div

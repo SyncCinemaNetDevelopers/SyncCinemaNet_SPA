@@ -1,7 +1,8 @@
 
 <template lang="pug">
     div.mainpage
-        h1 it is homepage
+        .wrapper
+            h1 it is homepage
 </template>
 
 

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Quicksand; /* Имя шрифта */
+  src: url("Quicksand-Medium.45f07396.ttf"); /* Путь к файлу со шрифтом */
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/*# sourceMappingURL=/stylus.8b14258f.css.map */

@@ -16,7 +16,14 @@ header[data-v-ccbc53] {
   align-items: center;
   justify-content: space-between;
   height: 40px;
-  min-width: 150px;
+  max-width: 215px;
+  width: 100%;
+  padding: 0px 10px;
+}
+@media screen and (max-width: 600px) {
+.main-nav .wrapper .nav-group.nav_center-items[data-v-ccbc53] {
+    display: none;
+}
 }
 .main-nav .wrapper .nav-group .item[data-v-ccbc53] {
   height: 30px;
@@ -49,8 +56,9 @@ header[data-v-ccbc53] {
   justify-content: center;
   background-color: #222;
   content: "";
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  margin: auto auto;
   border-radius: 100px;
 }
 .main-nav .wrapper .nav-group .login div span[data-v-ccbc53] {
@@ -219,5 +227,9 @@ input:focus {
   background: linear-gradient(to right, #ce6dfb, #6865f2);
   opacity: 0.1;
   cursor: auto;
+}
+
+h1 {
+  color: #000;
 }
 

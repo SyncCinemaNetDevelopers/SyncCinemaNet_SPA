@@ -3,16 +3,17 @@
     header
         nav.main-nav
             .wrapper
-                img(src="./../images/logo.png" class="logo")
+                .nav-group.nav_logo
+                    img(src="./../images/logo.png" class="logo")
                 .nav-group.nav_center-items
                     img(src="./../images/nav_fire.png" class="item")
                     img(src="./../images/nav_lock.png" class="item")
                     img(src="./../images/nav_camera.png" class="item")
                 .nav-group.account
-                    router-link(to="login").link.login
+                    router-link(to="/login").link.login
                         div
                             span Log-in
-                    router-link(to="registration").link.signup Sign-up
+                    router-link(to="/registration").link.signup Sign-up
 </template>
 
 
@@ -47,7 +48,16 @@ header
             justify-content space-between;
 
             height $nav-height;
-            min-width 150px
+            max-width 215px;
+            width 100%;
+            padding 0px 10px
+
+
+            &.nav_center-items
+                @media screen and (max-width:600px) {
+                    display : none 
+                }
+
             .item
                 height 30px;
             
@@ -81,8 +91,9 @@ header
                     justify-content center
                     background-color #222
                     content "";
-                    width calc(100% - 6px);
-                    height calc(100% - 6px);
+                    width calc(100% - 5px);
+                    height calc(100% - 5px);
+                    margin auto auto
                     border-radius 100px;
                     span
                         

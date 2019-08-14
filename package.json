@@ -4,8 +4,8 @@
   "description": "",
   "main": "js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "parcel build index.html --public-url ./"
+    "serve": "parcel index.pug",
+    "build" : "parcel build index.pug --public-url ./"
   },
   "repository": {
     "type": "git",

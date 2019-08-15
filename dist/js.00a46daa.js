@@ -12113,10 +12113,24 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   props: ['stream_id'],
   data: function data() {
-    return {};
+    return {
+      viewers: 666
+    };
   }
 };
 exports.default = _default;
@@ -12134,12 +12148,39 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "stream" }, [
     _c("div", { staticClass: "wrapper" }, [
-      _c("h1", [_vm._v("#" + _vm._s(_vm.stream_id))]),
-      _c("video")
+      _c("div", { staticClass: "blocks" }, [
+        _c("div", { staticClass: "block block-left" }, [
+          _c("h1", { staticClass: "block-title" }, [
+            _vm._v("#" + _vm._s(_vm.stream_id))
+          ]),
+          _c("video", { staticClass: "video" }),
+          _c("div", { staticClass: "bottom-panel" }, [
+            _c("div", { staticClass: "hash-tags" }, [
+              _vm._v(
+                "#hashtag #hashtag2 #hashtag #hashtag2 #hashtag #hashtag2 #hashtag #hashtag2 #hashtag #hashtag2 #hashtag #hashtag2"
+              )
+            ]),
+            _c("div", { staticClass: "viewers" }, [
+              _vm._v("Viewers : " + _vm._s(_vm.viewers))
+            ])
+          ])
+        ]),
+        _vm._m(0)
+      ])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "block block-right" }, [
+      _c("h1", { staticClass: "block-title" }, [_vm._v("#chat")]),
+      _c("div", { staticClass: "chat" })
+    ])
+  }
+]
 render._withStripped = true
 
           return {
@@ -12238,7 +12279,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4835" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37039" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

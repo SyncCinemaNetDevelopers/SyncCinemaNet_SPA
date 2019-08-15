@@ -31,6 +31,7 @@ export default {
 @import '../stylus/variables.styl';
 header 
     height $nav-height
+    margin-bottom 20px
 
 .main-nav
     background-color #222222

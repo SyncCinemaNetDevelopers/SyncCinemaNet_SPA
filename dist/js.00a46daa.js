@@ -11543,6 +11543,17 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   data: function data() {
     return {};
@@ -11561,15 +11572,61 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("header", [
+    _c("nav", { staticClass: "main-nav" }, [
+      _c("div", { staticClass: "wrapper" }, [
+        _vm._m(0),
+        _vm._m(1),
+        _c(
+          "div",
+          { staticClass: "nav-group account" },
+          [
+            _c(
+              "router-link",
+              { staticClass: "link login", attrs: { to: "/login" } },
+              [_c("div", [_c("span", [_vm._v("Log-in")])])]
+            ),
+            _c(
+              "router-link",
+              { staticClass: "link signup", attrs: { to: "/registration" } },
+              [_vm._v("Sign-up")]
+            )
+          ],
+          1
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("header", [
-      _c("nav", { staticClass: "main-nav" }, [_c("h1", [_vm._v("items")])])
+    return _c("div", { staticClass: "nav-group nav_logo" }, [
+      _c("img", {
+        staticClass: "logo",
+        attrs: { src: "/logo.6023b87e.png" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "nav-group nav_center-items" }, [
+      _c("img", {
+        staticClass: "item",
+        attrs: { src: "/nav_fire.1cea4a9e.png" }
+      }),
+      _c("img", {
+        staticClass: "item",
+        attrs: { src: "/nav_lock.33846c4f.png" }
+      }),
+      _c("img", {
+        staticClass: "item",
+        attrs: { src: "/nav_camera.43904bc2.png" }
+      })
     ])
   }
 ]
@@ -11605,7 +11662,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/App.vue":[function(require,module,exports) {
+},{"./..\\images\\logo.png":[["logo.6023b87e.png","images/logo.png"],"images/logo.png"],"./..\\images\\nav_fire.png":[["nav_fire.1cea4a9e.png","images/nav_fire.png"],"images/nav_fire.png"],"./..\\images\\nav_lock.png":[["nav_lock.33846c4f.png","images/nav_lock.png"],"images/nav_lock.png"],"./..\\images\\nav_camera.png":[["nav_camera.43904bc2.png","images/nav_camera.png"],"images/nav_camera.png"],"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/App.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11691,13 +11748,16 @@ render._withStripped = true
       
       }
     })();
-},{"./header":"vue-components/header.vue","_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Homepage.vue":[function(require,module,exports) {
+},{"./header":"vue-components/header.vue","./..\\fonts\\Quicksand-Medium.ttf":[["Quicksand-Medium.45f07396.ttf","fonts/Quicksand-Medium.ttf"],"fonts/Quicksand-Medium.ttf"],"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Homepage.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+//
+//
+//
 //
 //
 //
@@ -11723,18 +11783,24 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "mainpage" }, [
+    _c(
+      "div",
+      { staticClass: "wrapper" },
+      [
+        _c("h1", [_vm._v("it is homepage")]),
+        _c("router-link", { attrs: { to: "/stream/stream1" } }, [
+          _vm._v("test stream 1")
+        ]),
+        _c("router-link", { attrs: { to: "/stream/stream2" } }, [
+          _vm._v("test stream 2")
+        ])
+      ],
+      1
+    )
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mainpage" }, [
-      _c("h1", [_vm._v("it is homepage")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
           return {
@@ -11763,7 +11829,391 @@ render._withStripped = true
         
       }
     })();
-},{"vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"js/index.js":[function(require,module,exports) {
+},{"vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Login.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  data: function data() {
+    return {
+      nickname: "",
+      password: "",
+      nickname_ok: false,
+      help_nickname: false,
+      nickname_help_x: 0,
+      nickname_help_y: 0,
+      nickname_help_text: "The number of characters must be greater than 3!",
+      password_ok: false,
+      help_password: false,
+      password_help_x: 0,
+      password_help_y: 0,
+      password_help_text: "The number of characters must be greater than 3!",
+      all_right: false
+    };
+  },
+  methods: {
+    check_all: function check_all() {
+      this.check_nickname();
+      this.check_password();
+      this.all_right = this.nickname_ok && this.password_ok;
+    },
+    check_nickname: function check_nickname() {
+      if (this.nickname.length < 3) {
+        this.nickname_ok = false;
+        this.nickname_help_text = "The number of characters must be greater than 3!";
+        return false;
+      } else {
+        this.nickname_help_text = "OK";
+        this.nickname_ok = true;
+        return true;
+      }
+    },
+    check_password: function check_password() {
+      if (this.password.length < 3) {
+        this.password_ok = false;
+        this.password_help_text = "The number of characters must be greater than 3!";
+        return false;
+      } else {
+        this.password_ok = true;
+        this.password_help_text = "OK";
+        return true;
+      }
+    },
+    nickname_show_help: function nickname_show_help(e) {
+      this.nickname_help_x = e.target.offsetLeft + 15 + "px";
+      this.nickname_help_y = e.target.offsetTop + 15 + "px";
+      this.help_nickname = true;
+    },
+    nickname_hide_help: function nickname_hide_help(e) {
+      this.help_nickname = false;
+    },
+    password_show_help: function password_show_help(e) {
+      this.password_help_x = e.target.offsetLeft + 15 + "px";
+      this.password_help_y = e.target.offsetTop + 15 + "px";
+      this.help_password = true;
+    },
+    password_hide_help: function password_hide_help(e) {
+      this.help_password = false;
+    }
+  }
+};
+exports.default = _default;
+        var $7dd764 = exports.default || module.exports;
+      
+      if (typeof $7dd764 === 'function') {
+        $7dd764 = $7dd764.options;
+      }
+    
+        /* template */
+        Object.assign($7dd764, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "login" }, [
+    _c("div", { staticClass: "wrapper" }, [
+      _c("form", { staticClass: "form" }, [
+        _c("h1", { staticClass: "main-title" }, [_vm._v("LOG-IN")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "inputs" }, [
+          _c("div", [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.nickname,
+                  expression: "nickname"
+                }
+              ],
+              staticClass: "input input-nickname",
+              attrs: { type: "text", placeholder: "Nickname" },
+              domProps: { value: _vm.nickname },
+              on: {
+                input: [
+                  function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.nickname = $event.target.value
+                  },
+                  _vm.check_all
+                ]
+              }
+            }),
+            _vm._v(" "),
+            _c("img", {
+              staticClass: "check nickname-check",
+              attrs: {
+                src: _vm.nickname_ok
+                  ? "../images/forms/ok_circle.png"
+                  : "../images/forms/error_circle.png",
+                alt: ""
+              },
+              on: {
+                mouseover: _vm.nickname_show_help,
+                mouseleave: _vm.nickname_hide_help
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "help help-nickname",
+                class: { active: _vm.help_nickname },
+                style: {
+                  "--x": _vm.nickname_help_x,
+                  "--y": _vm.nickname_help_y
+                }
+              },
+              [_vm._v(_vm._s(_vm.nickname_help_text))]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.password,
+                  expression: "password"
+                }
+              ],
+              staticClass: "input input-password",
+              attrs: { type: "password", placeholder: "Password" },
+              domProps: { value: _vm.password },
+              on: {
+                input: [
+                  function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.password = $event.target.value
+                  },
+                  _vm.check_all
+                ]
+              }
+            }),
+            _vm._v(" "),
+            _c("img", {
+              staticClass: "check password-check",
+              attrs: {
+                src: _vm.password_ok
+                  ? "../images/forms/ok_circle.png"
+                  : "../images/forms/error_circle.png",
+                alt: ""
+              },
+              on: {
+                mouseover: _vm.password_show_help,
+                mouseleave: _vm.password_hide_help
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "help help-password",
+                class: { active: _vm.help_password },
+                style: {
+                  "--x": _vm.password_help_x,
+                  "--y": _vm.password_help_y
+                }
+              },
+              [_vm._v(_vm._s(_vm.password_help_text))]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("button", { class: { send: true, abled: _vm.all_right } }, [
+          _vm._v("Log-in")
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$7dd764', $7dd764);
+          } else {
+            api.reload('$7dd764', $7dd764);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"./..\\images\\forms\\bg.png":[["bg.4639557a.png","images/forms/bg.png"],"images/forms/bg.png"],"./..\\images\\forms\\nickname.png":[["nickname.73398389.png","images/forms/nickname.png"],"images/forms/nickname.png"],"./..\\images\\forms\\name.png":[["name.45d321e4.png","images/forms/name.png"],"images/forms/name.png"],"./..\\images\\forms\\password.png":[["password.eff0a20c.png","images/forms/password.png"],"images/forms/password.png"],"./..\\images\\forms\\email.png":[["email.318cd9ff.png","images/forms/email.png"],"images/forms/email.png"],"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Stream.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  props: ['stream_id'],
+  data: function data() {
+    return {
+      viewers: 666
+    };
+  }
+};
+exports.default = _default;
+        var $8b4ee6 = exports.default || module.exports;
+      
+      if (typeof $8b4ee6 === 'function') {
+        $8b4ee6 = $8b4ee6.options;
+      }
+    
+        /* template */
+        Object.assign($8b4ee6, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "stream" }, [
+    _c("div", { staticClass: "wrapper" }, [
+      _c("div", { staticClass: "blocks" }, [
+        _c("div", { staticClass: "block block-left" }, [
+          _c("h1", { staticClass: "block-title" }, [
+            _vm._v("#" + _vm._s(_vm.stream_id))
+          ]),
+          _c("video", { staticClass: "video" }),
+          _c("div", { staticClass: "bottom-panel" }, [
+            _c("div", { staticClass: "hash-tags" }, [
+              _vm._v(
+                "#hashtag #hashtag2 #hashtag #hashtag2 #hashtag #hashtag2 #hashtag #hashtag2 #hashtag #hashtag2 #hashtag #hashtag2"
+              )
+            ]),
+            _c("div", { staticClass: "viewers" }, [
+              _vm._v("Viewers : " + _vm._s(_vm.viewers))
+            ])
+          ])
+        ]),
+        _vm._m(0)
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "block block-right" }, [
+      _c("h1", { staticClass: "block-title" }, [_vm._v("#chat")]),
+      _c("div", { staticClass: "chat" })
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$8b4ee6', $8b4ee6);
+          } else {
+            api.reload('$8b4ee6', $8b4ee6);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -11774,6 +12224,10 @@ var _App = _interopRequireDefault(require("../vue-components/App.vue"));
 
 var _Homepage = _interopRequireDefault(require("../vue-components/Homepage.vue"));
 
+var _Login = _interopRequireDefault(require("../vue-components/Login.vue"));
+
+var _Stream = _interopRequireDefault(require("../vue-components/Stream.vue"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _vue.default.use(_vueRouter.default);
@@ -11782,6 +12236,13 @@ var router = new _vueRouter.default({
   routes: [{
     path: '/',
     component: _Homepage.default
+  }, {
+    path: '/login',
+    component: _Login.default
+  }, {
+    path: '/stream/:stream_id',
+    component: _Stream.default,
+    props: true
   }]
 });
 new _vue.default({
@@ -11790,7 +12251,7 @@ new _vue.default({
   },
   router: router
 }).$mount('#app');
-},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","../vue-components/App.vue":"vue-components/App.vue","../vue-components/Homepage.vue":"vue-components/Homepage.vue"}],"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","../vue-components/App.vue":"vue-components/App.vue","../vue-components/Homepage.vue":"vue-components/Homepage.vue","../vue-components/Login.vue":"vue-components/Login.vue","../vue-components/Stream.vue":"vue-components/Stream.vue"}],"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -11818,7 +12279,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "26045" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37039" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

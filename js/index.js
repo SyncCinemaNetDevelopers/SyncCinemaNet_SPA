@@ -5,10 +5,14 @@ Vue.use(VueRouter);
 
 import App from '../vue-components/App.vue';
 import Homepage from '../vue-components/Homepage.vue';
+import Login from '../vue-components/Login.vue';
+import Stream from '../vue-components/Stream.vue';
 
 let router = new VueRouter({
     routes : [
-        { path: '/', component: Homepage }
+        { path: '/', component: Homepage },
+        { path: '/login', component: Login },
+        { path: '/stream/:stream_id', component: Stream , props:true },
     ]
 })
 

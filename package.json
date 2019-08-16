@@ -4,7 +4,8 @@
   "description": "",
   "main": "js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "parcel index.pug",
+    "build" : "parcel build index.pug --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/Leha95/SyncCinemaNet_SPA#readme",
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.0.0",
+    "cssnano": "^4.1.10",
     "pug": "^2.0.4",
     "stylus": "^0.54.5",
     "vue-template-compiler": "^2.6.10"
